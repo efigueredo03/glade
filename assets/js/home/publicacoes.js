@@ -12,7 +12,6 @@ let menu = document.querySelector(".menu");
 entryPublicacao.addEventListener("focus", function(e) {
     entryPublicacao.classList.add("ativado");
     entryPublicacao.classList.remove("desativado");
-    entryPublicacao.style.margin = "10px 0 0 0";
 
     // Esconder o título
     titulo.classList.add("hidden");

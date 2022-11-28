@@ -2,7 +2,6 @@
     font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
-
 }
 
 :root {
@@ -13,7 +12,7 @@
 
     --sombra-fixos-topo: 0 0.5px 5px rgba(0, 0, 0, 0.5);
     --sombra-fixos-final: 0 -0.5px 5px rgba(0, 0, 0, 0.5);
-    --sombra-pulicacoes: 0 1px 5px rgba(0, 0, 0, 0.3);
+    --sombra-pulicacoes: 0px 1px 3px rgba(0, 0, 0, 0.3);
 
     --padding-cards: 6px 12px;
 
