@@ -1,4 +1,5 @@
 * {
+    font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
 
@@ -6,4 +7,30 @@
 
 :root {
     --cor-de-fundo: #fefefe;
-  }
+    --cor-de-borda: #969292;
+    --vermelho-padrao: #D61818;
+    --cor-fonte-botao: white;
+
+    --sombra-fixos-topo: 0 0.5px 5px rgba(0, 0, 0, 0.5);
+    --sombra-fixos-final: 0 -0.5px 5px rgba(0, 0, 0, 0.5);
+    --sombra-pulicacoes: 0 1px 5px rgba(0, 0, 0, 0.3);
+
+    --padding-cards: 6px 12px;
+
+}
+
+body {
+    height: 100vh;
+}
+
+.simple-button {
+    background-color: var(--vermelho-padrao);
+    padding: 0.5em 1em;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--cor-fonte-botao);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+}

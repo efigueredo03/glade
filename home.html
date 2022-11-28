@@ -2,8 +2,15 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="assets/css/padrao.css">
+    <link rel="stylesheet" href="assets/css/home/home.css">
     <link rel="stylesheet" href="assets/css/home/header.css">
+    <link rel="stylesheet" href="assets/css/home/menu.css">
+    <link rel="stylesheet" href="assets/css/home/publicacao.css">
     <title>Home | Glade</title>
 </head>
 <body>
@@ -15,26 +22,41 @@
             </div>
         </div>
     </header>
-    <section class="menu">
-        <nav>
-            <ul class="menu__options">
-                <li class="menu__options-option">
+    <main>
+        <section class="publicacao">
+            <article class="publicacao__box">
+                <h2 class="box__titulo">Bem vindo Emanoel!</h2>
+                <textarea class="box__input ativado" type="text" placeholder="O que está pensando?"></textarea>
+                <div class="box-actions-ativada">
+                    <a class="box__actions-img" href="#"><img  src="assets/img/icons/image.svg "></a>
+                    <div class="box__actions-buttons">
+                        <button class="simple-button">Cancelar</button>
+                        <button class="simple-button">Publicar</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="menu">
+        <nav class="menu__navigation">
+            <ul class="navigation__box">
+                <li>
                     <a>
-                        <img class="menu__options-icon" src="assets/img/icons/settings.png">
+                        <img class="box-img" src="assets/img/icons/icon-conf.svg">
+                    </a>
+                </li>
+                <li> 
+                    <a>
+                        <img class="box-img" src="assets/img/icons/icon_search.svg">
                     </a>
                 </li>
                 <li>
                     <a>
-                        <img src="assets/img/icons/lupa.png">
-                    </a>
-                </li>
-                <li>
-                    <a>
-                        <img src="assets/img/icons/perfil.png">
+                        <img class="box-img" src="assets/img/icons/icon-perfil.svg">
                     </a>
                 </li>
             </ul>
         </nav>
-    </section>
+    </footer>
 </body>
 </html>
