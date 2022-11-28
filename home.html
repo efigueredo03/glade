@@ -14,7 +14,7 @@
     <title>Home | Glade</title>
 </head>
 <body>
-    <header>
+    <header onmouseout="close()" onmouseover="enter()">
         <div class="header__conteudo">
             <img class="header__conteudo-logo" src="assets/img/logo.png">
             <div class="header__conteudo-perfil">
@@ -22,13 +22,22 @@
             </div>
         </div>
     </header>
-    <main>
+    <main id="main-home">
         <section class="publicacao">
             <article class="publicacao__box">
-                <h2 class="box__titulo">Bem vindo Emanoel!</h2>
-                <textarea class="box__input ativado" type="text" placeholder="O que está pensando?"></textarea>
+                <div class="box__content">
+                    <h2 class="box__titulo">Bem vindo Emanoel!</h2>
+                    <textarea id="textarea1" class="box__input desativado" type="text" placeholder="O que está pensando?"></textarea>
+                    <div class="box__content-img"></div>
+                    <textarea id="text-area-secundario" class="box__input ativado hidden" type="text"></textarea>
+                </div>
                 <div class="box-actions-ativada">
-                    <a class="box__actions-img" href="#"><img  src="assets/img/icons/image.svg "></a>
+                    <div class="box__actions-file">
+                        <div class="image-container">
+                            <img id="imgPhoto" src="assets/img/icons/image.svg" alt="">
+                        </div>
+                        <input id="flImage" type="file" accept="image/*">
+                    </div>
                     <div class="box__actions-buttons">
                         <button class="simple-button">Cancelar</button>
                         <button class="simple-button">Publicar</button>
@@ -59,4 +68,6 @@
         </nav>
     </footer>
 </body>
+<script src="assets/js/home/publicacoes.js"></script>
+<script src="assets/js/home/home.js"></script>
 </html>

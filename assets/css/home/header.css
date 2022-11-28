@@ -6,6 +6,8 @@ header {
     justify-content: center;
     box-shadow: var(--sombra-fixos-topo);
     position: fixed;
+    top: 0px;
+    z-index: 2;
 }
 
 .header__conteudo {

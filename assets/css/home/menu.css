@@ -2,6 +2,8 @@
     position: fixed;
     bottom: 0px;
     box-shadow: var(--sombra-fixos-final);
+    z-index: 2;
+    background-color: var(--cor-de-fundo);
 }
 
 .menu__navigation {
